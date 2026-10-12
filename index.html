@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuickBite | Fast, Flavorful Food</title>
+    <meta
+      name="description"
+      content="QuickBite is a modern demo food ordering website for burgers, pizza, chicken, rice, sides, and drinks."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="index.html" class="brand" aria-label="QuickBite home page">
+          <span class="brand-mark"><i class="fa-solid fa-utensils"></i></span>
+          <span>QuickBite</span>
+        </a>
+
+        <nav aria-label="Primary navigation">
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="confirmation.html">Confirmation</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="cart.html" class="cart-button" aria-label="View cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-badge hidden">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Fresh, fast, and filling</span>
+            <h1>Crave-worthy meals, delivered with a smile.</h1>
+            <p>
+              QuickBite brings together crowd-pleasing burgers, pizza, chicken
+              dishes, rice favorites, and sweet finishes for an easy
+              food-ordering experience.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="menu.html">Order Now</a>
+              <a class="btn btn-secondary" href="about.html">Learn More</a>
+            </div>
+            <div class="hero-meta">
+              <span class="meta-pill"
+                ><i class="fa-solid fa-clock"></i> 20-30 min</span
+              >
+              <span class="meta-pill"
+                ><i class="fa-solid fa-location-dot"></i> Local delivery</span
+              >
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-card">
+              <img
+                src="assets/images/burgers/classic-beef-burger.jpg"
+                alt="A hearty QuickBite burger meal"
+                loading="eager"
+              />
+            </div>
+            <div class="hero-badge">
+              <strong>Popular Combo</strong><br />
+              Burger + fries + drink
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Featured meals</span>
+            <h2>Favorites everyone keeps coming back for</h2>
+          </div>
+
+          <div class="featured-grid">
+            <article class="feature-card">
+              <img
+                src="assets/images/pizza/pepperoni-pizza.jpg"
+                alt="Pepperoni pizza"
+                loading="lazy"
+              />
+              <div class="feature-body">
+                <h3>Pepperoni Pizza</h3>
+                <p>Classic, cheesy, and packed with savory slices.</p>
+                <div class="feature-price">₦7,200</div>
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <img
+                src="assets/images/chicken/grilled-chicken.jpg"
+                alt="Grilled chicken meal"
+                loading="lazy"
+              />
+              <div class="feature-body">
+                <h3>Grilled Chicken</h3>
+                <p>Lean, juicy, and perfectly seasoned for a lighter option.</p>
+                <div class="feature-price">₦6,500</div>
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <img
+                src="assets/images/rice-pasta/nigerian-jollof-rice.jpg"
+                alt="Nigerian jollof rice"
+                loading="lazy"
+              />
+              <div class="feature-body">
+                <h3>Jollof Rice</h3>
+                <p>Rich, aromatic, and loaded with bold West African flavor.</p>
+                <div class="feature-price">₦4,900</div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Shop by category</span>
+            <h2>What’s on the menu today</h2>
+          </div>
+
+          <div class="categories-grid">
+            <article class="category-card">
+              <img
+                src="assets/images/burgers/double-cheeseburger.jpg"
+                alt="Burgers"
+                loading="lazy"
+              />
+              <div class="category-body">
+                <div>
+                  <h3>Burgers</h3>
+                  <p>Stacked, saucy, and made to satisfy.</p>
+                </div>
+                <a class="category-link" href="menu.html">Browse burgers</a>
+              </div>
+            </article>
+
+            <article class="category-card">
+              <img
+                src="assets/images/pizza/margherita-pizza.jpg"
+                alt="Pizza"
+                loading="lazy"
+              />
+              <div class="category-body">
+                <div>
+                  <h3>Pizza</h3>
+                  <p>Fresh toppings and golden crusts for every craving.</p>
+                </div>
+                <a class="category-link" href="menu.html">See pizzas</a>
+              </div>
+            </article>
+
+            <article class="category-card">
+              <img
+                src="assets/images/chicken/chicken-wings.jpg"
+                alt="Chicken"
+                loading="lazy"
+              />
+              <div class="category-body">
+                <div>
+                  <h3>Chicken</h3>
+                  <p>Crispy, grilled, and full of bold seasoning.</p>
+                </div>
+                <a class="category-link" href="menu.html">Try chicken</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="promo-banner">
+            <div>
+              <span class="eyebrow" style="color: #f7b07b"
+                >Meal deal offer</span
+              >
+              <h3>Build your hunger-fix combo.</h3>
+              <p>
+                Get any burger, fries, and a chilled drink in one easy bundle
+                for a quick lunch or dinner win.
+              </p>
+            </div>
+            <div>
+              <a class="btn btn-primary" href="menu.html">View the menu</a>
+            </div>
+          </div>
+
+          <div class="deal-grid">
+            <article class="deal-card">
+              <h3>Lunch Rush</h3>
+              <p>Choose a burger or rice meal with fries and any soft drink.</p>
+              <div class="deal-price">₦5,800</div>
+            </article>
+            <article class="deal-card">
+              <h3>Family Bite</h3>
+              <p>
+                Two mains, one side, and a dessert for easy shared ordering.
+              </p>
+              <div class="deal-price">₦11,900</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Why QuickBite</span>
+            <h2>Designed to make ordering feel easy</h2>
+          </div>
+
+          <div class="reason-grid">
+            <article class="reason-card">
+              <div class="reason-icon"><i class="fa-solid fa-bolt"></i></div>
+              <h3>Fast ordering</h3>
+              <p>Choose your food, add it quickly, and checkout in minutes.</p>
+            </article>
+            <article class="reason-card">
+              <div class="reason-icon">
+                <i class="fa-solid fa-shield-heart"></i>
+              </div>
+              <h3>Fresh quality</h3>
+              <p>
+                Comfort food favorites prepared with attention to flavor and
+                presentation.
+              </p>
+            </article>
+            <article class="reason-card">
+              <div class="reason-icon"><i class="fa-solid fa-star"></i></div>
+              <h3>Simple experience</h3>
+              <p>
+                Friendly service and clear product choices for every appetite.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="cta-panel">
+            <div>
+              <h2>Ready for your next bite?</h2>
+              <p>
+                Build a custom order from the menu and see the demo checkout
+                flow in action.
+              </p>
+            </div>
+            <a class="btn btn-primary" href="menu.html">Explore Menu</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">
+              <span class="brand-mark"
+                ><i class="fa-solid fa-utensils"></i
+              ></span>
+              <span>QuickBite</span>
+            </div>
+            <p>
+              Modern comfort food made easy. A frontend demo brand for ordering
+              burgers, chicken, pizza, and sweet treats.
+            </p>
+          </div>
+
+          <div>
+            <h3>Explore</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Help</h3>
+            <ul>
+              <li><a href="cart.html">Cart</a></li>
+              <li><a href="checkout.html">Checkout</a></li>
+              <li><a href="confirmation.html">Confirmation</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Demo notice</h3>
+            <p>
+              This site is a frontend mockup. No real payment or delivery
+              service is active.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© 2026 QuickBite Demo</span>
+          <span>Made for learning and portfolio building</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

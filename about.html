@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About QuickBite</title>
+    <meta
+      name="description"
+      content="Learn about the QuickBite demo brand story, mission, and food-ordering experience."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="index.html" class="brand" aria-label="QuickBite home page">
+          <span class="brand-mark"><i class="fa-solid fa-utensils"></i></span>
+          <span>QuickBite</span>
+        </a>
+
+        <nav aria-label="Primary navigation">
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="confirmation.html">Confirmation</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="cart.html" class="cart-button" aria-label="View cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-badge hidden">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="page-header">
+        <div class="container page-header-inner">
+          <div>
+            <h1>About QuickBite</h1>
+            <p>
+              QuickBite is a demo food-ordering brand created to showcase a
+              clean and modern ordering experience.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <section class="section">
+        <div class="container about-intro">
+          <div class="about-copy">
+            <div class="story-box">
+              <span class="eyebrow">Our story</span>
+              <h2>Comfort food, made simple.</h2>
+              <p>
+                QuickBite was imagined as a friendly digital food brand that
+                brings together familiar favorites, easy navigation, and a
+                premium but approachable feel. It is designed to help beginners
+                practice frontend development while building a polished
+                portfolio project.
+              </p>
+              <p>
+                We focus on the experience: a fast menu, a clear cart flow, and
+                a smooth demo checkout that teaches key JavaScript patterns
+                without the need for a real backend.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-image">
+            <img
+              src="assets/images/pizza/bbq-chicken-pizza.jpg"
+              alt="Fresh pizza and meal preparation"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Our mission</span>
+            <h2>Make ordering feel easy and enjoyable</h2>
+          </div>
+
+          <div class="highlight-grid">
+            <div class="highlight-item highlight-box">
+              <div class="highlight-icon">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div>
+                <h3>Fast service</h3>
+                <p>Simple flows help customers browse and decide quickly.</p>
+              </div>
+            </div>
+
+            <div class="highlight-item highlight-box">
+              <div class="highlight-icon">
+                <i class="fa-solid fa-bowl-food"></i>
+              </div>
+              <div>
+                <h3>Appealing menu</h3>
+                <p>
+                  Our menu balances comfort classics with fresh, high-value
+                  choices.
+                </p>
+              </div>
+            </div>
+
+            <div class="highlight-item highlight-box">
+              <div class="highlight-icon">
+                <i class="fa-solid fa-face-smile"></i>
+              </div>
+              <div>
+                <h3>Friendly experience</h3>
+                <p>We favor approachable design and clear calls to action.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="cta-panel about-cta">
+            <div>
+              <h2>Hungry yet?</h2>
+              <p>
+                Check out the menu and try the demo ordering flow for yourself.
+              </p>
+            </div>
+            <a class="btn btn-primary" href="menu.html">Order from Menu</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">
+              <span class="brand-mark"
+                ><i class="fa-solid fa-utensils"></i
+              ></span>
+              <span>QuickBite</span>
+            </div>
+            <p>
+              Modern comfort food made easy. A frontend demo brand for ordering
+              burgers, chicken, pizza, and sweet treats.
+            </p>
+          </div>
+
+          <div>
+            <h3>Explore</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Help</h3>
+            <ul>
+              <li><a href="cart.html">Cart</a></li>
+              <li><a href="checkout.html">Checkout</a></li>
+              <li><a href="confirmation.html">Confirmation</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Demo notice</h3>
+            <p>
+              This site is a frontend mockup. No real payment or delivery
+              service is active.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© 2026 QuickBite Demo</span>
+          <span>Made for learning and portfolio building</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+@media (max-width: 900px) {
+  .page-header {
+    padding-top: 4rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-header {
+    padding-top: 3.5rem;
+  }
+
+  .site-footer {
+    padding-top: 3rem;
+  }
+
+  .cta-panel {
+    align-items: flex-start;
+  }
+}

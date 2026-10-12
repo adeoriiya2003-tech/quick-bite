@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Confirmation | QuickBite</title>
+    <meta
+      name="description"
+      content="See your QuickBite demo order confirmation and order details."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/confirmation.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script src="js/app.js" defer></script>
+    <script src="js/confirmation.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="index.html" class="brand" aria-label="QuickBite home page">
+          <span class="brand-mark"><i class="fa-solid fa-utensils"></i></span>
+          <span>QuickBite</span>
+        </a>
+
+        <nav aria-label="Primary navigation">
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="confirmation.html" class="active">Confirmation</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="cart.html" class="cart-button" aria-label="View cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-badge hidden">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="page-header">
+        <div class="container page-header-inner">
+          <div>
+            <h1>Order Status</h1>
+            <p>Here is the latest saved demo order from your checkout flow.</p>
+          </div>
+        </div>
+      </div>
+
+      <section class="section confirmation-wrap">
+        <div class="container">
+          <div id="confirmationContent"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">
+              <span class="brand-mark"
+                ><i class="fa-solid fa-utensils"></i
+              ></span>
+              <span>QuickBite</span>
+            </div>
+            <p>
+              Modern comfort food made easy. A frontend demo brand for ordering
+              burgers, chicken, pizza, and sweet treats.
+            </p>
+          </div>
+
+          <div>
+            <h3>Explore</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Help</h3>
+            <ul>
+              <li><a href="cart.html">Cart</a></li>
+              <li><a href="checkout.html">Checkout</a></li>
+              <li><a href="confirmation.html">Confirmation</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Demo notice</h3>
+            <p>
+              This site is a frontend mockup. No real payment or delivery
+              service is active.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© 2026 QuickBite Demo</span>
+          <span>Made for learning and portfolio building</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

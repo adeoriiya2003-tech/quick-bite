@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | QuickBite</title>
+    <meta
+      name="description"
+      content="Complete your QuickBite demo checkout and submit your delivery details."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script src="js/app.js" defer></script>
+    <script src="js/checkout.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="index.html" class="brand" aria-label="QuickBite home page">
+          <span class="brand-mark"><i class="fa-solid fa-utensils"></i></span>
+          <span>QuickBite</span>
+        </a>
+
+        <nav aria-label="Primary navigation">
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="checkout.html" class="active">Checkout</a></li>
+            <li><a href="confirmation.html">Confirmation</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="cart.html" class="cart-button" aria-label="View cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-badge hidden">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="page-header">
+        <div class="container page-header-inner">
+          <div>
+            <h1>Checkout</h1>
+            <p>
+              Complete the demo order form below. This is a frontend-only
+              checkout and no real payment is processed.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <section class="section">
+        <div class="container checkout-layout">
+          <div class="checkout-card">
+            <h3>Delivery details</h3>
+            <form id="checkoutForm" class="checkout-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full name</label>
+                  <input
+                    id="name"
+                    name="name"
+                    class="input"
+                    type="text"
+                    placeholder="Your full name"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    name="email"
+                    class="input"
+                    type="email"
+                    placeholder="name@example.com"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Phone number</label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    class="input"
+                    type="tel"
+                    placeholder="08012345678"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="address">Delivery address</label>
+                  <input
+                    id="address"
+                    name="address"
+                    class="input"
+                    type="text"
+                    placeholder="123 Aso Drive, Lekki"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="instructions"
+                  >Delivery instructions (optional)</label
+                >
+                <textarea
+                  id="instructions"
+                  name="instructions"
+                  rows="4"
+                  placeholder="Any building details, gate code, or notes for the rider?"
+                ></textarea>
+              </div>
+
+              <button class="btn btn-primary" type="submit">
+                Place Demo Order
+              </button>
+            </form>
+
+            <div class="checkout-note">
+              <strong>Demo checkout:</strong> We are only saving your order in
+              localStorage for this front-end example. No card details or real
+              payment are collected.
+            </div>
+          </div>
+
+          <aside class="summary-box" aria-label="Checkout summary">
+            <h3>Order summary</h3>
+            <ul id="checkoutItems" class="order-list"></ul>
+
+            <div class="summary-row">
+              <span>Subtotal</span>
+              <strong id="checkoutSubtotal">₦0</strong>
+            </div>
+            <div class="summary-row">
+              <span>Delivery fee</span>
+              <strong id="checkoutDelivery">₦0</strong>
+            </div>
+            <div class="summary-row total">
+              <span>Total</span>
+              <strong id="checkoutTotal">₦0</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">
+              <span class="brand-mark"
+                ><i class="fa-solid fa-utensils"></i
+              ></span>
+              <span>QuickBite</span>
+            </div>
+            <p>
+              Modern comfort food made easy. A frontend demo brand for ordering
+              burgers, chicken, pizza, and sweet treats.
+            </p>
+          </div>
+
+          <div>
+            <h3>Explore</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Help</h3>
+            <ul>
+              <li><a href="cart.html">Cart</a></li>
+              <li><a href="checkout.html">Checkout</a></li>
+              <li><a href="confirmation.html">Confirmation</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Demo notice</h3>
+            <p>
+              This site is a frontend mockup. No real payment or delivery
+              service is active.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© 2026 QuickBite Demo</span>
+          <span>Made for learning and portfolio building</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

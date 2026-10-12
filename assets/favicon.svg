@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">QuickBite favicon</title>
+  <desc id="desc">A modern orange rounded square with a fork and knife icon.</desc>
+  <rect width="128" height="128" rx="28" fill="#F58634"/>
+  <g fill="#fff" transform="translate(32 20)">
+    <path d="M14 14h12v68c0 9-7 16-16 16S0 91 0 82V14h12v68c0 2 1 3 3 3s3-1 3-3V14zm37-14h12v17h8v13h-8v49c0 9-7 16-16 16s-16-7-16-16V16h-8V3h8V0h12v3h8V0h12v3zm15 0h12v86c0 9-7 16-16 16s-16-7-16-16V0h12v80c0 2 1 3 3 3s3-1 3-3V0z"/>
+  </g>
+</svg>
